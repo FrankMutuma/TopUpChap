@@ -11,13 +11,13 @@
 		android:layout_width="match_parent"
 		android:inputType="textMultiLine"
 		android:layout_height="wrap_content"
-		android:lines="5"
-		android:maxLines="20"
-		android:minLines="5"
 		android:scrollbars="vertical"
 		android:id="@+id/EdtTxtCodeArea"
 		android:padding="5dp"
-		android:layout_margin="5dp"/>
+		android:layout_margin="5dp"
+		android:hint="Enter the Airtime codes"
+		android:maxLines="5"
+		android:gravity="center_horizontal"/>
 
 	<Button
 		android:layout_width="wrap_content"

@@ -115,11 +115,13 @@ public class MainActivity extends Activity {
                 // or rate limits associated with consecutive top-ups to the same recipient.
                 String[] ussdCodes = new String[shuffledValidNumbers.length];
                 for (int i = 0; i < shuffledValidNumbers.length; i++) {
-                    ussdCodes[i] = "*141*" + shuffledValidNumbers[i] + "#";
+                  ussdCodes[i] = "*141*" + shuffledValidNumbers[i] + "#";
+				  //for testing purposes
+				//  ussdCodes[i]="*144*4#";
                     Log.d("USSD Generation", "Generated code: " + ussdCodes[i]);
                 }
                 // Call the asynchronous USSD calling method
-                UssdCaller.makeUssdCallsAsync(this, ussdCodes, 2000);
+                UssdCaller.makeUssdCallsAsync(this, ussdCodes,1000);
             } else {
                 Toast.makeText(this, "No valid 16-digit numbers entered for top-up.", Toast.LENGTH_SHORT).show();
             }
