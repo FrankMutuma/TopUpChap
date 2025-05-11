@@ -121,7 +121,7 @@ public class MainActivity extends Activity {
                     Log.d("USSD Generation", "Generated code: " + ussdCodes[i]);
                 }
                 // Call the asynchronous USSD calling method
-                UssdCaller.makeUssdCallsAsync(this, ussdCodes,1000);
+                UssdCaller.makeUssdCallsAsync(this, ussdCodes,400);
             } else {
                 Toast.makeText(this, "No valid 16-digit numbers entered for top-up.", Toast.LENGTH_SHORT).show();
             }
